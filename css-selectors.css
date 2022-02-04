@@ -1,0 +1,35 @@
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* tag selector */
+
+h1 {
+    color: indianred;
+}
+p {
+color: crimson;
+word-spacing: 5px;
+}
+p {
+    text-align: justify;
+}
+/* class selector */
+.uper {
+    text-transform: uppercase;
+    color: darkturquoise;
+}
+
+/* id selector */
+#colorchange {
+    color: seagreen;
+}
+
+/* attribute selector */
+[type]{
+    color: blue;
+    padding: 15px;
+}
+
