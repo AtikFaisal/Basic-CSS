@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinator-2</title>
+    <style>
+        p ~ h2 {
+            color: blue;
+            font-weight: bold;
+            font-size: xx-large;
+        }
+        p + h3 {
+            color: deeppink;
+            font-style: italic;
+            text-align: left;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+        .baba > p {
+            color: violet;
+            font-size: x-large;
+        }
+        .baba h1 {
+            color: firebrick;
+            font-size: xx-large;
+            font-weight: 900;
+            font-weight: lighter;
+            text-decoration: underline;
+        }
+        .dada p {
+            color: darkgoldenrod;
+            font-style: oblique;
+            font-size: xx-large;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="dada">
+        <div class="baba">
+            <p>This is our familly details.</p>
+            <h1 class="bhai">This is Num-2.</h1>
+            <p>His name is Abdur Razzak. He is 32 years old. He is married. He work our own business.</p>
+            <h1 class="bhai">This is Num-3.</h1>
+            <p>His name is Khaled Bin Setab. He is 26 years old. He is unmarried. He reads in Masters.</p>
+            <h1 class="bhai">This is Num-4.</h1>
+            <p>His name is Shahalom. He is 24 years old. He is unmarried. He also reads in Masters.</p>
+            <h1 class="bhai">This is Num-5.</h1>
+            <p>This is me. My name is Atik Faisal. I am unmarried. I am 22 years old. I am reading in degree.</p>
+            <h1 class="bhai">His name is Farhad. He is also unmarried. He is 20 years old. He reads in class 12.</h1>
+            <h1 class="bon">This is Num-1.</h1>
+            <p>Her name is Sabiha Khatun. She is 36 years old. She is married. She passed Kamil in Madrasha.</p>
+            <div class="bon">
+                <p></p>
+                <h2 class="bon-ar-meye">This is Num-1.</h2>
+                <p>Her name is Romana Islam. She is 10 years old. She reads is class-4.</p>
+                <h2 class="bon-ar-meye">This is Num-2.</h2>
+                <p>Her name is Rezuyana Islam. She is 6 years old.</p>
+            </div>
+            <div class="bhai">
+                <p></p>
+                <h3 class="bhai-ar-chele">This is Num-1.</h3>
+                <p>His name is Sadik Hasan Shuvo.</p>
+                <h3 class="bhai-ar-meye">This is Num-2.</h3>
+                <p>Her name is Safiya. She is very eldest person in my familly. She is only 2 month.</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+</body>
+</html>
