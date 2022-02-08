@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .Box-One {
+            background: black;
+            color: brown;
+            width: 150px;
+            height: 150px;
+            padding: 15px;
+            border-: 20px solid black;
+            margin-bottom: 15px;
+            border-radius: 30%;
+        }
+        .Box-Two {
+            background: cyan;
+            color: darkgreen;
+            width: 150px;
+            height: 150px;
+            padding: 15px;
+            border-radius: 30%;
+            border: 5px dashed black;
+            
+        }
+        a {
+            color: crimson;
+            font-size: large;
+            font-weight: 800;
+            font-style: italic;
+            display: inline-block;
+            margin-top: 30px;
+            background: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="Box-One">
+        <h1 class="Box One__Heading">Box One</h1>
+        <a href="#">Google</a>
+    </div>
+    <div class="Box-Two">
+        <h1 class="Box Two__Heading">Box Two</h1>
+    </div>
+</body>
+</html>
