@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS link</title>
+    <style>
+        a.br {
+            text-decoration: none;
+            background: yellow;
+            display: inline-block;
+            text-align: center;
+            padding: 30px 40px;
+        }
+        a.br:hover {
+            cursor: wait;
+        }
+        a.submit {
+            background-color: blueviolet;
+            color: #fff;
+            border-radius: 15px;
+            padding: 10px 20px;
+            transition: 3s all;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-decoration: none;
+        }
+        a.submit:hover {
+            background-color: darkblue;
+            cursor: grabbing;
+        }
+        .com {
+            padding: 10px 15px;
+            border: 1px solid green;
+            text-decoration: none;
+            color: red;
+            transition: 0.7s all;
+        }
+        a.com:hover {
+            cursor: wait;
+            background-color: darkorchid;
+            color: burlywood;
+        }
+        .text:visited {
+            color:firebrick;
+        }
+        .button {
+            background-image: linear-gradient(to right, #7f00ff, #e100ff);
+            padding: 10px 45px;
+            display: inline-block;
+            margin-top: 100px;
+            border-radius: 35px;
+            color: #fff;
+            text-decoration: none;
+            transition: .5s all;
+            position: relative;
+            z-index: 1;
+        }
+        .button::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-image: linear-gradient(to left, #7f00ff, #e100ff);
+            z-index: -1;
+            transition: opacity .5s linear;
+            opacity: 0;
+            border-radius: 35px;
+        }
+        .button:hover::before {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.br.teletalk.com.bd" class="br" target="blank">Bangladesh Railways</a>
+    <a href="#" class="submit">Submit</a>
+    <a href="#" class="com">Completed</a>
+    <a href="" class="text">text</a>
+</br>
+    <a href="#" class="button">Button</a>
+</body>
+</html>
