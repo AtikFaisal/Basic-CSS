@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css list & dropdown</title>
+    <style>
+        ul {
+            list-style-type: circle;
+            list-style-position: inside;
+            list-style-image: none;
+        }
+        li {
+            background-color: aqua;
+        }
+        ul.nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            border: 0;
+            justify-content: center;
+        }
+        ul.nav li {
+            background-color: darkcyan;
+            position: relative;
+        }
+        ul.nav li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 15px 20px;
+        }
+        ul.nav li:hover {
+            background-color: rgb(7, 53, 54);
+        }
+        ul.dropdown {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: none;
+            position: absolute;
+            top: 100%;
+        }
+        ul.nav li:hover ul.dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>List One</li>
+        <li>List Two</li>
+        <li>List Three</li>
+    </ul>
+    <ol>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ol>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a>
+            <ul class="dropdown">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Devolopment</a></li>
+                <li><a href="#">Web Graphics</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>
