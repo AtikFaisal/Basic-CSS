@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #5bb9b8;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border-collapse: collapse;
+            border-spacing: 3px;
+        }
+        table {
+            background-color: #2c3845;
+            color: #fff;
+        }
+        thead th, tbody td {
+            border: 1px solid #28333f;
+            padding: 1rem;
+            text-align: left;
+            padding-right: 25px;
+        }
+        thead th {
+            background-color: #202932;
+        }
+        tbody tr:nth-of-type(even) {
+            background-color: #242e39;
+        }
+        tbody td:last-child {
+            text-align: center;
+            color: #b8c4d2;
+        }
+        button {
+            background-color: #4b908f;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px;
+            border: none;
+        }
+        td:not(td:last-child) {
+            width: 17rem;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Provider Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Atik Faisal</td>
+                    <td>siamhasan.faisal111@gmail.com</td>
+                    <td>01793666462</td>
+                    <td><button type="submit">Select</button></td>
+                </tr>
+                <tr>
+                    <td>Siam Hasan</td>
+                    <td>akxdeadpool@gmail.com</td>
+                    <td>01790380655</td>
+                    <td><button type="submit">Select</button></td>
+                </tr>
+                <tr>
+                    <td>Farhad</td>
+                    <td>atik.faisal111684@gmail.com</td>
+                    <td>01724900301</td>
+                    <td><button type="submit">Select</button></td>
+                </tr>
+                <tr>
+                    <td>Sarwar Jahan</td>
+                    <td>sarwarjahan@gmail.com</td>
+                    <td>01710002203</td>
+                    <td><button type="submit">Select</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Year 2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
