@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form</title>
+    <script src="https://kit.fontawesome.com/2d0b6bea5a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:ital,wght@0,300;0,600;1,300;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background: #f3e0e2;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .form-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        main {
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            box-shadow: 10px 10px 42px #00000091;
+        }
+        main > * {
+            flex-basis: 100%;
+        }
+        .login-form {
+            background-color: #fff;
+            text-align: center;
+        }
+        .heading {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: 3rem;
+        }
+        .fab {
+            border: 2px solid #fff;
+            padding: 15px;
+            font-size: 30px;
+            width: 60px;
+            border-radius: 50%;
+            height: 60px;
+            margin-bottom: 30px;
+        }
+        .fa-facebook-f {
+            margin-right: 5px;
+        }
+        .fa-twitter {
+            margin-left: 5px;
+        }
+        input {
+            width: 80%;
+            background-color: #b1aeae;
+            padding: 15px;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            border: none;
+        }
+        form a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #000000a6;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        input[type='submit'] {
+            background: #ff4b2b;
+            width: 17%;
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .login-text {
+            background-image: linear-gradient(to right,#ff454d, #ff416a);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .login-text h2 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+        .login-text p {
+            color: #fff;
+            font-size: 1.3rem;
+        }
+        .login-text {
+            padding: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-main">
+    <main>
+        <div class="login-form">
+            <h1 class="heading">Login</h1>
+            <div class="social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>Or use your account</p>
+            <form action="">
+                <input type="email" name="email" id="email" placeholder="Email"></br>
+                <input type="password" name="password" id="password" placeholder="Password"></br>
+                <a href="">Forget your password</a></br>
+                <input type="submit" value="LOGIN IN">
+            </form>
+        </div>
+        <div class="login-text">
+            <h2>HTML CSS Login Form</h2>
+            <p>The login form is created with pure HTML and CSS. For social icon, Fontawesome is used.</p>
+        </div>
+    </main>
+</div>
+</body>
+</html>
