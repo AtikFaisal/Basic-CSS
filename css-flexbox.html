@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            background-color: azure;
+            height: 60vh;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+        }
+        .child-1 {
+            min-height: 100px;
+            width: 200px;
+            background-color: cadetblue;
+            order: 1;
+        }
+        .child-2 {
+            min-height: 150px;
+            width: 200px;
+            background-color: sandybrown;
+            order: 5;
+        }
+        .child-3 {
+            min-height: 200px;
+            width: 200px;
+            background-color: rebeccapurple;
+            order: 3;
+        }
+        .child-4 {
+            min-height: 250px;
+            width: 200px;
+            background-color: orangered;
+            order: 4;
+        }
+        .child-5 {
+            min-height: 300px;
+            width: 200px;
+            background-color: goldenrod;
+            order: 2;
+        }
+        div.form {
+            width: 500px;
+            background-color: rgb(117, 116, 114);
+            border: 1px solid black;
+        }
+        .form-control {
+            display: flex;
+        }
+        .form-control input {
+            flex: auto;
+        }
+        section {
+            background: darkgrey;
+            border: 1px solid black;
+            width: 50vw;
+            display: flex;
+        }
+        main {
+            background: darkseagreen;
+            color: #fff;
+        }
+        aside {
+            background: darkslategray;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+        <div class="child-4">4</div>
+        <div class="child-5">5</div>
+    </div>
+    <div class="form">
+        <form action="">
+            <div class="name form-control">
+                <label for="name">Your Name</label>
+                <input type="text" name="" id="name">
+            </div>
+            <div class="email form-control">
+                <label for="email">Email</label>
+                <input type="email" name="" id="email">
+            </div>
+        </form>
+    </div>
+    <section>
+        <main>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repellat quibusdam obcaecati aperiam quos cumque. Unde ad non dolorum, voluptatibus rerum mollitia beatae nihil accusamus distinctio qui pariatur, sint quis.
+            </p>
+        </main>
+        <aside>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil nemo voluptatum omnis accusamus veniam dignissimos necessitatibus, dolorum aut nam eaque enim repudiandae aliquam vero deleniti! Molestiae id voluptatibus est!
+            </p>
+        </aside>
+    </section>
+</body>
+</html>
