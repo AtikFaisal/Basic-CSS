@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Home Page</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+        }
+        ul.nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        ul.nav li {
+            background-color: aqua;
+            position: relative;
+        }
+        ul.nav li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 1rem 1.3rem;
+        }
+        ul.nav li:hover {
+            background-color: rgb(10, 63, 63);
+        }
+        ul.dropdown {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: none;
+            position: absolute;
+            top: 100%;
+        }
+        ul.nav li:hover ul.dropdown {
+            display: block;
+        }
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            position: fixed;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background: #042331;
+        }
+        .sidebar header {
+            font-size: 22px;
+            color: #fff;
+            text-align: center;
+            line-height: 70px;
+            background: #063146;
+            user-select: none;
+        }
+        .sidebar ul a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 65px;
+            font-size: 20px;
+            color: #fff;
+            padding-left: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(255,255,255,.1);
+            border-bottom: 1px solid black;
+            transition: .5s;
+        }
+        ul li:hover a {
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a>
+            <ul class="dropdown">
+                <li><a href="#">HSC Page</a></li>
+                <li><a href="#">SSC Page</a></li>
+                <li><a href="#">JSC Page</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Contact</a>
+            <ul class="dropdown">
+                <li><a href="#">Whatsapp</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Cell Number</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Notice</a>
+            <ul class="dropdown">
+                <li><a href="#">Recent Notice</a></li>
+                <li><a href="#">Exam Notice</a></li>
+                <li><a href="#">Result Notice</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="sidebar">
+        <header>Other Page</header>
+        <ul>
+            <li><a href="#"><i class="fas fa-qrcode"></i>Deshboard</a></li>
+            <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+            <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+            <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+            <li><a href="#"><i class="fa-sliders-h"></i>Services</a></li>
+            <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
