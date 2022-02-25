@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Toolbtip</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100%;
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: justify;
+            overflow: auto;
+        }
+        .tooltip {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 150px;
+            background-color: coral;
+            color: antiquewhite;
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+        }
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="tooltip">Facebook
+        <span class="tooltip-text">Facebook is a social media.</span>
+    </a>
+    <br> <br>
+    <div class="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptas ducimus culpa! Alias nesciunt quaerat explicabo, velit, temporibus odio sint iure deleniti delectus culpa aliquam enim et minima adipisci commodi beatae nulla molestiae ipsam? Optio, ea pariatur! Laudantium fugit perspiciatis labore ad nesciunt voluptatem excepturi veritatis iure a. Aperiam labore suscipit distinctio inventore maxime ducimus omnis voluptate dolor deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestias velit eius iure quae aliquid architecto assumenda voluptas sequi consequatur dicta impedit debitis nobis aliquam, sapiente dignissimos provident et doloremque eligendi! Ut at accusamus repellendus assumenda hic ad voluptatem provident quis, recusandae velit dignissimos eum optio officiis, sint sunt iste laudantium a amet. Hic impedit adipisci nemo fugit sit asperiores corrupti amet quae ipsam odit officia et veniam harum beatae, nobis nihil velit unde laudantium minus ipsum quidem omnis ad, iure atque. Fugit vel placeat est repellendus enim tempore non dolore odit quasi nisi amet officiis, beatae quidem eveniet possimus similique quae dolor deserunt debitis a, quia earum. Quaerat, earum deserunt exercitationem expedita dicta tempora commodi quas doloremque, eum, quis laborum qui repellat totam nam libero optio. Numquam repudiandae temporibus corrupti quaerat consequuntur vitae velit expedita modi distinctio eaque nisi qui accusamus molestiae laudantium ut placeat sapiente recusandae, dolor repellat id. Sint saepe quidem architecto quae facere aperiam, mollitia nobis quam explicabo sequi cum delectus earum hic expedita iure aliquid facilis vel excepturi non? Alias omnis, at eum quis tenetur consectetur voluptas est blanditiis inventore mollitia ratione dignissimos harum reiciendis vel dolorem nostrum facilis optio sequi numquam saepe necessitatibus natus.</div>
+</body>
+</html>
