@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        .manu {
+            background-color: cadetblue;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .manu a {
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+        }
+        .manu a:hover {
+            background-color: gray;
+        }
+        @media screen and (max-width: 600px) {
+            .manu {
+                flex-direction: column;
+            }
+            .manu a {
+                background-color: indigo;
+                margin: 10px 0;
+                text-align: center;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="manu">
+         <a href="#">Manu</a>
+         <a href="#">Tutarial</a>
+         <a href="#">About Me</a>
+         <a href="#">Contact</a>
+     </div>
+</body>
+</html>
