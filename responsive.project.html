@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Project-1</title>
+    <style>
+         * {
+             box-sizing: border-box;
+         }
+         .header {
+             background-color: coral;
+             color: white;
+             padding: 1px 5px;
+             text-align: center;
+         }
+         .nav-manu {
+             padding: 1% 5%;
+             background-color: #39a4ac;
+         }
+         .nav-manu a {
+             color: white;
+             text-decoration: none;
+             font-size: 1,2rem;
+             padding: 10px;
+             display: block;
+         }
+         .main {
+             padding: 1% 5%;
+             background-color: turquoise;
+             text-align: justify;
+         }
+         .aside {
+             background-color: #39a4ac;
+             padding: 1% 5%;
+             text-align: center;
+         }
+         .footer {
+             background-color: black;
+             color: white;
+             padding: 20px;
+             text-align: center;
+             font-size: 0.8rem;
+         }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+        .row::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width: 762px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+            .nav-manu a {
+                text-align: center;
+                background-color: aqua;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Atik Faisal</h1>
+    </div>
+    <div class="row">
+        <div class="nav-manu col-2">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="main col-7">
+            <h1>I am a Web Devoloper</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptas eius praesentium natus nisi deleniti ut reiciendis culpa magnam quibusdam!</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos deserunt a provident hic voluptas quos inventore rerum veritatis vel doloribus facere explicabo dignissimos voluptatum, possimus dolorem cumque, molestias consectetur aperiam tenetur voluptates omnis pariatur similique tempore? Unde, officiis? Officia perspiciatis atque, rem eius eos similique, explicabo nihil necessitatibus delectus ex quae voluptatibus numquam vero quos quas iusto deleniti assumenda est ullam harum. Repudiandae commodi culpa ratione voluptatem, labore, quidem placeat id laudantium fuga rerum doloribus aperiam quasi! Delectus, facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus nemo illum corporis dolores voluptatem, minus quo soluta, nihil totam delectus ipsum provident, quos in. Cum optio magnam aut magni, doloribus quas nostrum eum at. Quo eos saepe a, iste illum vitae voluptatibus, voluptatum corporis minima maiores dolorem deleniti esse numquam commodi similique fugit laudantium architecto adipisci repellendus corrupti dicta amet exercitationem quos magnam? Sapiente laborum cupiditate magnam modi tempora minus accusantium autem voluptates vitae earum harum repellendus sed quod fugiat quae aliquam dignissimos nobis voluptatibus vel excepturi illum, quas minima necessitatibus? Rem reiciendis sequi quisquam sunt maxime distinctio quam perspiciatis nostrum! Corrupti odit dolores dolorem! Atque, qui perferendis voluptatibus eius laborum cupiditate aliquam labore accusamus dignissimos tempore asperiores, repellendus quos ut est pariatur repellat blanditiis. Cum suscipit facilis aspernatur inventore repellat vel animi aperiam fugiat illo laudantium, labore quod, voluptate natus totam. Illum recusandae quisquam illo consectetur qui cupiditate exercitationem ipsum fugit aspernatur esse ipsam iste mollitia incidunt praesentium rem dolorum labore voluptas, vero eligendi sint culpa tempore, provident animi? Ad quidem numquam in perspiciatis deleniti cumque consequuntur error nam, nobis quod doloremque inventore at vero eum non, ex neque nesciunt consequatur, facilis repellendus itaque ipsa. Veniam, eveniet ad.</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae esse, recusandae eaque cum voluptatibus.</p>
+        </div>
+        <div class="aside col-3">
+            <h2>What I Love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo asperiores excepturi mollitia praesentium maxime ducimus vel suscipit odit saepe in!</p>
+            <h2>What I Love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo asperiores excepturi mollitia praesentium maxime ducimus vel suscipit odit saepe in!</p>
+            <h2>What I Love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo asperiores excepturi mollitia praesentium maxime ducimus vel suscipit odit saepe in!</p>
+            <h2>What I Love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo asperiores excepturi mollitia praesentium maxime ducimus vel suscipit odit saepe in!</p>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; Study with Faisal, Devoloper by Atik Faisal
+    </div>
+</body>
+</html>
